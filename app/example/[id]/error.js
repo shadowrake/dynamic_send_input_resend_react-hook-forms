@@ -1,8 +1,6 @@
 'use client' // Error components must be Client Components
  
 import { useEffect } from 'react'
-import Footer from "../../../../components/footer"
-import NavBar from "../../../../components/nav"
  
 export default function Error({ error, reset }) {
   useEffect(() => {
@@ -12,7 +10,6 @@ export default function Error({ error, reset }) {
  
   return (
     <main className="relative isolate min-h-full">
-        <NavBar />
         <div className="bg-red-100 relative group">
         <img
           src=""
@@ -30,7 +27,6 @@ export default function Error({ error, reset }) {
             </a>
           </div>
         </div>
-        <Footer />
       </main>
   )
 }
