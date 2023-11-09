@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {getExample2} from '../lib/prisma/read/example2.js'
 
 export default function Home() {
