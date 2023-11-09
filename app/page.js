@@ -13,7 +13,7 @@ export default function Home() {
             {/* maps data from api */}
             {example.map((examples) => (
               <div key={examples.id} >
-            <a href={`/games/${examples.id}`}>
+            <a href={`/example/${examples.id}`}>
               <div className="group relative">
                 <div className="overflow-hidden rounded-lg bg-gray-100">
                 <div className="bg-red-100 relative group">
