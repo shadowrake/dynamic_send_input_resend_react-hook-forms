@@ -46,7 +46,7 @@ export default function Contact({ input, example2 }: Input)  {
         console.log({data: result.data});
         toast.success("Email sent");
         reset();
-        window.location.href = "/recruitment";
+        window.location.href = "/";
         return;
       }
 
