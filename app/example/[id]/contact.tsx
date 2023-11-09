@@ -11,12 +11,12 @@ type Input = {
   email: string;
   username: string;
   input: { name: string; id: React.Key; dummy: string}[];
-  team: {title: string};
+  example2: {title: string};
   title: string;
   message: string;
 };
 
-export default function Contact({ input, team }: Input)  {
+export default function Contact({ input, example2 }: Input)  {
     const [data, setData] = useState<Input>();
 
     //Define the formstate and readys the form for submission
@@ -33,7 +33,7 @@ export default function Contact({ input, team }: Input)  {
         email: "",
         username: "",
         input: input,
-        title: team.title,
+        title: example2.title,
       },
     });
 
@@ -68,10 +68,10 @@ export default function Contact({ input, team }: Input)  {
           <input 
                     type="disabled"
                     id="title"
-                    value={team.title}
+                    value={example2.title}
                     autoComplete="off"
                     className="hidden block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                    {...register("team.title")} />
+                    {...register("example2.title")} />
           <label htmlFor="username" className="mt-2 block text-sm font-medium leading-6 text-gray-900">
             Email
           </label>
